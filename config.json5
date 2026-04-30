@@ -1,0 +1,18 @@
+{
+  // The GUI starts with this path selected. It can be changed in the text box.
+  default_target: "~/.claude/settings.json",
+
+  // Rules are [action, json_tree_path, value].
+  // "add" and "replace" write the value at the path; missing parents are created.
+  // "rename" moves data from json_tree_path to the destination path in value,
+  // merges with existing destination data, and removes the original key.
+  fix_rules: [
+    //["add", "env.ANTHROPIC_AUTH_TOKEN", "some_token"],
+    //["add", "env.ANTHROPIC_BASE_URL", "http://some_provider"],
+    ["add", "env.CLAUDE_CODE_ATTRIBUTION_HEADER", "0"],
+    //["replace", "skipDangerousModePermissionPrompt", true],
+    ["replace", "autoUpdates", false],
+    ["replace", "hasCompletedOnboarding", true],
+    ["rename", "hooks", "hooks2"],
+  ],
+}
