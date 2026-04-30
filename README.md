@@ -1,6 +1,8 @@
 # Claude Settings Fix
 
-A small utility that restores Claude settings JSON files from rules in `config.json5`.
+A small utility that restores Claude settings JSON files from rules in `config.json5`. support both gui and cli.
+
+![image-20260430182332992](README.assets/image-20260430182332992.png)
 
 ## Usage
 
